@@ -106,10 +106,6 @@ body {
 .form_heading {
   font-size: 24px;
 }
-.form_pic {
-  height: 140px;
-  width: 140px;
-}
 
 .Gradiant-bg {
   font-size: 42px;
@@ -165,4 +161,70 @@ ul {
 }
 #msg-success.success-message {
   color: green !important;
+}
+
+/* Extra Small devices (portrait phones) */
+@media (max-width: 575.98px) {
+  /* CSS styles for extra small devices */
+  .phonepay_img {
+    height: 80px;
+    width: 80px;
+  }
+  .form_pic {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+/* Small devices (landscape phones) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* CSS styles for small devices */
+  .phonepay_img {
+    height: 85px;
+    width: 85px;
+  }
+  .form_pic {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* CSS styles for medium devices */
+  .phonepay_img {
+    height: 95px;
+    width: 95px;
+  }
+  .form_pic {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+/* Large devices (desktops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* CSS styles for large devices */
+  .phonepay_img {
+    height: 120px;
+    width: 120px;
+  }
+  .form_pic {
+    height: 110px;
+    width: 110px;
+  }
+}
+
+/* Extra Large devices (large desktops) */
+@media (min-width: 1200px) {
+  /* CSS styles for extra large devices */
+  .phonepay_img {
+    height: 140px;
+    width: 140px;
+  }
+
+  .form_pic {
+    height: 120px;
+    width: 120px;
+  }
 }
