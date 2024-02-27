@@ -1,8 +1,44 @@
 document.addEventListener('DOMContentLoaded', function () {
+  let imageUrl = 'test';
   const toolTip = (id) => {
     // Update the tooltip content
     const tooltipText = document.querySelector('.tooltiptext');
   };
+
+  let url =
+    'https://script.google.com/macros/s/AKfycbx14ZG0zJTDjvk5cLQZFtq--TqJMu0N3_BIqQRJLyGVvLl2X0goizTksrtZezrj-cry/exec';
+  let file = document.querySelector('#image');
+  let img = document.querySelector('img');
+  let submit_button = document.getElementById('submit-button');
+  submit_button.disabled = true;
+  let upload_image_status = document.getElementById('status_of_image_upload');
+  file.addEventListener('change', () => {
+    let fr = new FileReader();
+    fr.addEventListener('loadend', () => {
+      upload_image_status.innerHTML = `<img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif?20151024034921" alt="Loading..." style="height: 60px;" />`;
+      let res = fr.result;
+      // Comment out or remove the following line to prevent displaying the image as a preview
+      // img.src = res;
+      let spt = res.split('base64,')[1];
+      let obj = {
+        base64: spt,
+        type: file.files[0].type,
+        name: file.files[0].name,
+      };
+      fetch(url, {
+        method: 'POST',
+        body: JSON.stringify(obj),
+      })
+        .then((r) => r.text())
+        .then((data) => {
+          imageUrl = data;
+          console.log(imageUrl);
+          upload_image_status.innerHTML = `<img src="https://res.cloudinary.com/sivapullaiah/image/upload/v1709040534/icons8-tick_qexxjn.gif" alt="Loading..." style="height: 40px" />`;
+          submit_button.disabled = false;
+        });
+    });
+    fr.readAsDataURL(file.files[0]);
+  });
 
   const form = document.getElementById('myForm');
   const submitButton = document.getElementById('submit-button');
@@ -12,8 +48,13 @@ document.addEventListener('DOMContentLoaded', function () {
   form.addEventListener('submit', function (e) {
     e.preventDefault();
     const formData = new FormData(form);
+    formData.delete('Image');
+    formData.append('Image', imageUrl);
+    for (let pair of formData.entries()) {
+      console.log(pair[0] + ', ' + pair[1]); // You will see the data here
+    }
     const apiUrl =
-      'https://script.google.com/macros/s/AKfycbwmkw4MRisKueud4Ljh61UKci_0Bh3vSN26_P-xvCVjTDKElqJF3Vo1SMuIqf-naNd-iA/exec';
+      'https://script.google.com/macros/s/AKfycbyF7qBawXfYRrwvvtqHVne-dKaevkap0tGiRdOHtiHBjcJWgD8w2KP8ddfeSaEj9ubcxQ/exec';
 
     // Change button text to loading GIF with reduced height
     submitButton.innerHTML = `<img src="${loadingGifUrl}" alt="Loading..." style="height: 30px;" />`;
@@ -57,6 +98,8 @@ document.addEventListener('DOMContentLoaded', function () {
       .finally(() => {
         // Revert button text back to "Submit"
         submitButton.textContent = 'Submit';
+        submit_button.disabled = true;
+        upload_image_status.innerHTML = '';
       });
   });
 });
