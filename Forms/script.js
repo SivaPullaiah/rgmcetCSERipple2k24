@@ -26,10 +26,10 @@ const makeRemainingScreensInvisible = (sectionId) => {
     }
   });
 
-  if (sectionId === 'sectionHome') {
+  if (sectionId === 'sectionFirst') {
     $(firstSection).addClass('selected_section');
     $(secondSection).removeClass('selected_section');
-  } else if (sectionId === 'sectionVideos') {
+  } else if (sectionId === 'sectionSecond') {
     $(firstSection).removeClass('selected_section');
     $(secondSection).addClass('selected_section');
   }
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log(pair[0] + ', ' + pair[1]); // You will see the data here
     }
     const apiUrl =
-      'https://script.google.com/macros/s/AKfycbye3bAxwfHgnjd0EK7666tpa-jMXwR9uZSroS1mo5ZYQ1bdrFdLTb4bvocJkpzTruB6Xw/exec';
+      'https://script.google.com/macros/s/AKfycbxvkowJlFfbWKWp9Hj3d6EcDQ47ey5MlxcRXO2PifCOi3JYJVApWDr-drdvFOkdJ58obg/exec';
 
     // Change button text to loading GIF with reduced height
     submitButton.innerHTML = `<img src="${loadingGifUrl}" alt="Loading..." style="height: 30px;" />`;
