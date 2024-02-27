@@ -216,12 +216,12 @@ ul {
     width: 95px;
   }
   .form_pic {
-    height: 100px;
-    width: 100px;
+    height: 140px;
+    width: 140px;
   }
 
   .ripple-logo {
-    height: 60px;
+    height: 160px;
   }
 }
 
@@ -233,12 +233,12 @@ ul {
     width: 120px;
   }
   .form_pic {
-    height: 110px;
-    width: 110px;
+    height: 140px;
+    width: 140px;
   }
 
   .ripple-logo {
-    height: 60px;
+    height: 100px;
   }
 }
 
@@ -285,4 +285,52 @@ ul {
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.inputEle[type='radio'] {
+  border-radius: 50%;
+  transform: scale(1.5); /* Increase the size */
+  margin-right: 5px; /* Adjust spacing */
+}
+
+.inputEle[type='radio']:hover {
+  border-radius: 50%;
+  width: 1em; /* Set the width to be equal to the height */
+  height: 1em;
+}
+
+#accommodationNo,
+#accommodationYes {
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+}
+
+.inputEle[type='radio'] {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.accommodation_label {
+  font-size: 18px;
+  margin: 0px;
+}
+
+.second_section,
+.first_section {
+  margin-right: 0.5rem;
+  border-radius: 16px;
+  height: 2px;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  background-color: rgb(226, 232, 240);
+}
+
+.selected_section {
+  margin-right: 0.5rem;
+  border-radius: 16px;
+  height: 2px;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  background-color: rgb(71, 85, 105);
 }

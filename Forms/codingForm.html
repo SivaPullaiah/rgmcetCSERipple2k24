@@ -25,7 +25,7 @@
     <div class="formSection mt-5">
         <div class="container">
             <div class="row">
-                <a href="../index.html">
+                <a href="../index.html" class="d-none d-lg-block">
                     <div class="sticky-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
                             class="bi bi-arrow-left" viewBox="0 0 16 16">
@@ -35,7 +35,7 @@
                     </div>
                 </a>
 
-                <div class="why-register col-xs-12 col-sm-12 col-md-7 col-lg-7">
+                <div class="why-register col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
                     <a class="form-back" href="../index.html">
                         <span class="d-flex flex-row align-items-center"><img class="ripple-logo"
                                 src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708919298/WhatsApp_Image_2024-02-19_at_21.27.18_2fb18051_te5ahv.jpg"
@@ -82,7 +82,7 @@
                 </div>
 
                 <div
-                    class="mt-5 submitForm col-xs-12 col-sm-12 col-md-5 col-lg-5 d-flex flex-row justify-content-center align-items-center">
+                    class="mt-5 submitForm col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 d-flex flex-row justify-content-center align-items-center">
                     <form class="form" id="myForm">
                         <div class="form-row d-flex flex-row justify-content-between align-items-center">
                             <h1 class="form_heading">Coding
@@ -116,6 +116,30 @@
                                     placeholder="Enter your Reg.No" required>
                             </div>
                             <div class="form-group">
+                                <label for="clgName">
+                                    <p class="labelName">Collage Name</p>
+                                    <!-- In the reg no contains collage code so no need to take collage name -->
+                                </label>
+                                <input type="text" class="form-control inputEle" name="ClgName" id="clgName"
+                                    placeholder="Enter your Collage Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Branch">
+                                    <p class="labelName">Branch</p>
+                                    <!-- In the reg no contains collage code so no need to take collage name -->
+                                </label>
+                                <input type="text" class="form-control inputEle" name="Branch" id="Branch"
+                                    placeholder="Ex: Computer Science & Engineering." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Semister">
+                                    <p class="labelName">Year & Semister</p>
+                                    <!-- In the reg no contains collage code so no need to take collage name -->
+                                </label>
+                                <input type="text" class="form-control inputEle" name="Semister" id="Semister"
+                                    placeholder="Ex: II & II" required>
+                            </div>
+                            <div class="form-group">
                                 <label for="email">
                                     <p class="labelName">Email</p>
                                 </label>
@@ -139,7 +163,7 @@
                                         value="PhonePay no: 9391993975" readonly>
                                     <img class="col-4" class="phonepay_img"
                                         src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708784874/IMG_20240224_195650_anvuq1.png"
-                                        alt="Phone Pay Scanner" name="paynumber">
+                                        alt="Phone Pay Scanner" name="paynumber" id="Dispaly_phone_qr">
                                 </div>
                             </div>
                             <div class="form-group">

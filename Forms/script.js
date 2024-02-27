@@ -1,3 +1,40 @@
+let sections = document.querySelectorAll('[id^="section"]');
+if (sections.length > 1) {
+  let sectionOne = sections[0];
+  sections.forEach((section) => {
+    if (section != sectionOne) {
+      $(section).css('display', 'none');
+    }
+  });
+}
+
+const display = (sectionId) => {
+  makeRemainingScreensInvisible(sectionId);
+  let section = document.getElementById(sectionId);
+  $(section).css('display', 'block');
+  window.scrollTo(0, 0);
+};
+
+const makeRemainingScreensInvisible = (sectionId) => {
+  let sections = document.querySelectorAll('[id^="section"]');
+  let firstSection = document.querySelector('.first_section');
+  let secondSection = document.querySelector('.second_section');
+
+  sections.forEach((section) => {
+    if (section.id !== sectionId) {
+      $(section).css('display', 'none');
+    }
+  });
+
+  if (sectionId === 'sectionHome') {
+    $(firstSection).addClass('selected_section');
+    $(secondSection).removeClass('selected_section');
+  } else if (sectionId === 'sectionVideos') {
+    $(firstSection).removeClass('selected_section');
+    $(secondSection).addClass('selected_section');
+  }
+};
+
 document.addEventListener('DOMContentLoaded', function () {
   let imageUrl = 'test';
   const toolTip = (id) => {
@@ -54,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log(pair[0] + ', ' + pair[1]); // You will see the data here
     }
     const apiUrl =
-      'https://script.google.com/macros/s/AKfycbyF7qBawXfYRrwvvtqHVne-dKaevkap0tGiRdOHtiHBjcJWgD8w2KP8ddfeSaEj9ubcxQ/exec';
+      'https://script.google.com/macros/s/AKfycbye3bAxwfHgnjd0EK7666tpa-jMXwR9uZSroS1mo5ZYQ1bdrFdLTb4bvocJkpzTruB6Xw/exec';
 
     // Change button text to loading GIF with reduced height
     submitButton.innerHTML = `<img src="${loadingGifUrl}" alt="Loading..." style="height: 30px;" />`;

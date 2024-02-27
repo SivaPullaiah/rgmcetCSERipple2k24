@@ -25,7 +25,7 @@
     <div class="formSection mt-5">
         <div class="container">
             <div class="row">
-                <a href="../index.html">
+                <a href="../index.html" class="d-none d-lg-block">
                     <div class="sticky-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
                             class="bi bi-arrow-left" viewBox="0 0 16 16">
@@ -35,8 +35,14 @@
                     </div>
                 </a>
 
-                <div class="why-register col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                    <h1 class="main-heading">Ripple 2k24</h1>
+                <div class="why-register col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-7">
+                    <a class="form-back" href="../index.html">
+                        <span class="d-flex flex-row align-items-center"><img class="ripple-logo"
+                                src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708919298/WhatsApp_Image_2024-02-19_at_21.27.18_2fb18051_te5ahv.jpg"
+                                alt="LOGO">
+                            <h1 class="main-heading ml-3">Ripple 2k24</h1>
+                        </span>
+                    </a>
                     <div class="why-register-content mt-5">
                         <h2 class="second-heading">
                             Networking, opportunities, knowledge exchange, career advancement.
@@ -64,13 +70,26 @@
                             New connections.
                         </li>
                     </ul>
+
+                    <h1>Instructions</h1>
+                    <ul>
+                        <li style="font-size: 20px;">--- ----- --------- ---------</li>
+                        <li style="font-size: 20px;">----- ---- -------- --- -----</li>
+                        <li style="font-size: 20px;">-- ---- ------- --- ---- ----</li>
+                        <li style="font-size: 20px;">----- ----- -------- -- --- -</li>
+                        <li style="font-size: 20px;">- ------ ----- ---- - -------</li>
+                    </ul>
                 </div>
 
                 <div
-                    class="mt-5 submitForm col-xs-12 col-sm-12 col-md-5 col-lg-5 d-flex flex-row justify-content-center align-items-center">
+                    class="mt-5 submitForm col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-5 d-flex flex-row justify-content-center align-items-center">
                     <form class="form" id="myForm">
+                        <div class="d-flex flex-row justify-content-between">
+                            <div class="col-6 first_section selected_section"></div>
+                            <div class="col-6 second_section"></div>
+                        </div>
                         <div class="form-row d-flex flex-row justify-content-between align-items-center">
-                            <h1 class="form_heading">Poster Presentation
+                            <h1 class="form_heading">Coding
                                 <br>
                                 Registrations
                                 <div class="sc-kcbnda fMROTN"><svg width="200" height="7" viewBox="0 0 63 5" fill="none"
@@ -81,66 +100,178 @@
                                     </svg></div>
                             </h1>
                             <img class="form_pic"
-                                src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708842421/403857-PD6A24-339_oc694t.jpg"
-                                alt="poster">
+                                src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708835420/coding_pic_thgjdt.jpg"
+                                alt="coding">
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">
-                                    <p class="labelName">Name</p>
-                                </label>
-                                <input type="text" class="form-control inputEle" name="Name" id="name"
-                                    placeholder="Enter Your Name" required>
+                        <div id="sectionHome">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">
+                                        <p class="labelName">Name</p>
+                                    </label>
+                                    <input type="text" class="form-control inputEle" name="Name" id="name"
+                                        placeholder="Enter Your Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="regno">
+                                        <p class="labelName">Reg.No.</p>
+                                        <!-- In the reg no contains collage code so no need to take collage name -->
+                                    </label>
+                                    <input type="text" class="form-control inputEle" name="RegNo" id="regno"
+                                        placeholder="Enter your Reg.No" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="clgName">
+                                        <p class="labelName">Collage Name</p>
+                                        <!-- In the reg no contains collage code so no need to take collage name -->
+                                    </label>
+                                    <input type="text" class="form-control inputEle" name="ClgName" id="clgName"
+                                        placeholder="Enter your Collage Name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Branch">
+                                        <p class="labelName">Branch</p>
+                                        <!-- In the reg no contains collage code so no need to take collage name -->
+                                    </label>
+                                    <input type="text" class="form-control inputEle" name="Branch" id="Branch"
+                                        placeholder="Ex: Computer Science & Engineering." required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="Semister">
+                                        <p class="labelName">Year & Semister</p>
+                                        <!-- In the reg no contains collage code so no need to take collage name -->
+                                    </label>
+                                    <input type="text" class="form-control inputEle" name="Semister" id="Semister"
+                                        placeholder="Ex: II & II" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        <p class="labelName">Email</p>
+                                    </label>
+                                    <input type="email" class="form-control inputEle" id="email" name="Email"
+                                        placeholder="Enter your email adress" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">
+                                        <p class="labelName">Phone</p>
+                                    </label>
+                                    <input type="text" class="form-control inputEle" name="Phone" id="phone"
+                                        placeholder="Enter 10 Digit Mobile Number" required>
+                                </div>
+
+                                <div class="col-12 d-flex flex-row justify-content-end">
+                                    <input class="btn btn-primary mt-3 col-12" onclick="display('sectionVideos')"
+                                        value="Next" />
+                                    <!-- <button type="submit" class="btn btn-primary w-100 mt-3 col-8"
+                                        id="submit-button"><span class="submit-text">Submit</span></button> -->
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <label for="regno">
-                                    <p class="labelName">RegNo</p>
-                                    <!-- In the reg no contains collage code so no need to take collage name -->
-                                </label>
-                                <input type="text" class="form-control inputEle" name="RegNo" id="regno"
-                                    placeholder="Enter your Reg.No" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="email">
-                                    <p class="labelName">Email</p>
-                                </label>
-                                <input type="email" class="form-control inputEle" id="email" name="Email"
-                                    placeholder="Enter your email adress" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">
-                                    <p class="labelName">Phone</p>
-                                </label>
-                                <input type="text" class="form-control inputEle" name="Phone" id="phone"
-                                    placeholder="Enter 10 Digit Mobile Number" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="transaction" class="d-flex flex-row justify-content-between">
-                                    <p class="labelName">Transaction Id</p>
-                                    <div class="Tooltip" id="phonepay">
-                                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAHw0lEQVR4AZVXA5RkyRKNrrffXHt3bNu2bdu2bdvTtm2bY9s2u7sqNu6pzj6vZ1p7z4lTePkybmZG3IikT+GyNY02jwwihw3J5LErw2JMFWvtVPQdWtnHh4gG0c1zT//ptCmlhOu2tE77ZkZ2slub1N12VWJl29WJ/2Vmw6iKlmS5LJ6IelocmhdtaEQbiJkxFxWJJP/rhMHA9vGhGr5PqW9Pty8++3LLqOBR89u5uc9s5nx7XHWbrDGVrXl0ZSsWgjyqolX29MaOr+V58oahAVuOLootTzSK7Ncn0+hKVlqsxxXyPXiKDsyOogJhtTyBrp58BALUirZqxxbH4fu/l/fwXjiprv2dUZWseFjpYzyk5FEeVuYYDy19zJRjRvX/4BJHeUR5S55Q09a4tJuXj8+Bk/Un1bEjwH1nuuH40jg6siCGPoVsTzol+V2jJ3dfE1Fni/Z/2Uk2qxLbzG7pcmNEueM8pNRROMwaWd4ySxwYxZlJ/jcNh5XNNfzOFnKZOeN5Ym07Xt3PdxkJbl14RnZrkjQ5Fto9JZxykRZyg7Bq2Jc0wzCnlSvtnR4xd0p9B1nREcaEMrkRDvp8f8A08NfDJkw86LcjDCfiFGMYzz+xLOwKFrC8p3c4M393Nv4eYkw7viSOJHaIgDq0luC8GW3WZFLaOiZkHs518O9HTFiRTMSYEKu2WhbPZ+Lu8rMHbzjS6SKDwLC8JHKJKFIyJhPfV/TyPs/M/3167w3iwZAs8UbArObONLe1q7Z2gB/tmxE5aHwNGx5S4qhRmBvVJNjuAb8cZolk1iPU5hz3/+kQVolxehIwkAAZkPwIsku6evqQAAu+duoxEXBwbrTBa+8JCre/UG5aI8cPsnIerpzrJoH1+e4AS4oxYMw2MiApyfh/ZAVL5ThfEtgJBPK2cSFLZX6S3dbIjBEW39FsWtbdy0+Y4qXM/Jxjm+Gk7/cHWTKE9dg/M9JMomJeErp5GAGLmJLY+ig7WcJ5cyoRsHdaBMmEzcdWs+GhpY4alWMdc6QYDM8xIff8ah/LcXF2zi7gc+1Af5CAU4xTcZGHBBYnxgvau++ZXNeectAfq3eFI0QuBurOjsdUtWbJZaRUrk2pZ88Yd2RhLGdnmUm8evaeJfdZRIrH17RFEGO+PCRgWMi0ho7vU4JulCYgxu3yV3L2r/BAl0IMw0pORt7mV0/f8+O7rxnRD3t6T+z+G7539QV/fJfFRqOJgQ/y/dGtV/zyyTs+PD+G+/8sAVr+eJ7sgJ5AQUULZhOwaURQB5wtVq0ngC3EKm6df8rFAUjokRF+i/v+cBDKmCcoscvYbZFtZwJEJJaLXjOiVDkXMoqA5K8P269L5oupD1jhdMwdtlqRwMgAp40p/Oj2K1aIdL7IGL9xWCDnZJQ+KE3IMEj27BYu1wmQ4rJfBUg+EcyYpPM/d3PAsTOs4LwllUWuud+PhxiBdz7xPiusHxLAHf+2kwd9HgO5JgRMM5s6MQGi1VGQ1RFmHTd9SgLHM/C3wxxmd54VRDfE+UHGWeL5Jd3u7JgQygPk7KVC4v2CtAHPjQSsG+SfAAcgoA9AZQgiqB1UT8Fzdwb3/jZXfPTHA6GBVrAUrvyc59EFAqTiWaN6ITjEuEACtudZwX1XOkthYsSObgeKS4BRV1DsVC1YIV0Mcj4z/x2wxHazFBBWiHG/zN3+u5elMuIZn0u8V1wCJhiCUPw+JmDb2JDhI80E8j0CTIQJpUQzAOHJ/JDN0rKh1vOhudH8TDThTxDIhubMaekSTEDQ8bPlRd0y8xEiFUQiSGZFvH/9pb4Q6QE5LhYB7DQCVKrvSlJY3NkjwUwg/0xAHKAci2TzQ1G6vAAhE4SoUAJK6ERdTeOq2RjdtqfXMTvv4knrBwcMzBEjFYifkyhnJgGtRyGSrhhCxDvGh/L1M0+KOgJVjLKEABYSRwrMrATphDxUu4DPfHcCGQMHCD5IbT8xCFEhBEy61RvHylFKd9xmy+hgUkKkST2gPVMj2oyX1clRZGNwQSRUYCL9QAif104/ZgVp5xUBvXO8i66I5X7hVJNW079pqoEUZGs1OQKSnn4PAkQGfiyKBAzHglQMPH6GFeRSg50BAX1DgyBH6t18+uDN/5IDrtPhBTEWuUcQ4Xgx9yikK3Y0NxWfkYBxfhmC1UosoedjubBgAfrxmagLs1o4ZwYeO1PPcWMK7Z4aru2fFUkAenVCeyT128JkgjqOpfnt3Ryh89JCGdEZ67cynzTFJ/QfhnqvnhtRYaXBZWl63/sfOd0Y5y4B+IWkvbQBgaSA8yc8tF6ZYFA7sXNS2G4ZCBJoTEAiC851xvpPiQcxS/PlRLIJW44mVNqvxHCHCyVw3xTF1X6gOYQY+AxLJB13TQ7DhcECJKTvQ6/YSCZIGF/DFiQYq8EKoZrmfl9MPnO+I8oZBmkX8rfE6Vxm/iLM/jyt6uur/Z0mE3Dz7FPKD3BIUnRILh8kWq9Jy06A3GS6Lerk4Sip+hJHg0DFJ+oEnOEiM9J8J3wvgRazpr/flBtnnvxfyCO2MK9BLq+4edGNs0+oMECa8RIMtyRNPuWIcJcbSnK1+lLItJAuaezK3j7rpzZ0WCXxsmbj8MClawf6dZLu6FcSCFmSrommN3bS0kNvUZTLJbn8xlN++AOeV5eoGVx34AAAAABJRU5ErkJggg=="
-                                            alt="Phone Pay Scanner" width="25" height="25">
-                                        <span class="tooltiptext">
-                                            <img src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708784874/IMG_20240224_195650_anvuq1.png"
-                                                alt="Phone Pay Scanner" style="width: 200px; height: 200px;">
-                                        </span>
+                        </div>
+
+
+
+                        <div id="sectionVideos">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="paynumber">
+                                        <p class="labelName">Payment Section</p>
+                                    </label>
+
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <input type="text" class="form-control inputEle col-8" name="paynumber"
+                                            id="phone" value="PhonePay no: 9391993975" readonly>
+                                        <img class="col-4" class="phonepay_img"
+                                            src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708784874/IMG_20240224_195650_anvuq1.png"
+                                            alt="Phone Pay Scanner" name="paynumber" id="Dispaly_phone_qr">
                                     </div>
-                                </label>
-                                <input type="text" class="form-control inputEle" name="TransactionId" id="transaction"
-                                    placeholder="Enter Transaction Id" required>
+                                </div>
+                                <div class="form-group">
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <label for="transaction">
+                                            <p class="labelName">Transaction Id <a
+                                                    style="text-decoration: none; color: #131314;"
+                                                    href="transactionSteps.html">
+                                                    <span class="Tooltip" id="phonepay">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-info-circle"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                            <path
+                                                                d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                                                        </svg>
+                                                        <span class="tooltiptext"
+                                                            style="background-color: #131314; color: #f1f1f1; width: 100px;">If
+                                                            you
+                                                            don't know click me</span>
+                                                    </span>
+                                                </a></p>
+                                        </label>
+                                        <div class="Tooltip mr-3 d-flex flex-row justify-content-center align-items-center"
+                                            id="phonepay">
+                                            <img src="data:image/png;base64,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"
+                                                alt="Phone Pay Scanner" width="25" height="25">
+                                            <span class="tooltiptext">
+                                                <img src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708784874/IMG_20240224_195650_anvuq1.png"
+                                                    alt="Phone Pay Scanner" style="width: 150px; height: 150px;">
+                                            </span>
+                                            <span> &nbsp; ₹150</span>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="form-control inputEle" name="TransactionId"
+                                        id="transaction" placeholder="Enter Transaction Id" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="event">
+                                        <p class="labelName">Event Name</p>
+                                    </label>
+                                    <input type="text" class="form-control inputEle" name="Event" id="event"
+                                        value="Coding" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="image">
+                                        <p class="labelName">Payment Screenshort</p>
+                                    </label>
+                                    <div class="d-flex flex-row justify-content-between align-items-center">
+                                        <input type="file" class="customise_file_icon form-control col-7" id="image"
+                                            name="Image" accept="image/*" /> <span id="status_of_image_upload"></span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="accommodationNeeded">
+                                        <p class="labelName">Do you require accommodation?</p>
+                                        <span><span class="badge badge-pill badge-info">Note</span> &nbsp; Only for Out
+                                            of
+                                            station students</span>
+                                    </label>
+                                    <div class="d-flex flex-row col-12">
+                                        <div class="d-flex flex-row align-items-center">
+                                            <input type="radio" class="form-control inputEle" name="accommodationNeeded"
+                                                id="accommodationYes" value="yes" />
+                                            <label class="accommodation_label" for="accommodationYes">Yes</label>
+                                        </div>
+                                        <div class="d-flex flex-row align-items-center ml-5">
+                                            <input type="radio" class="form-control inputEle" name="accommodationNeeded"
+                                                id="accommodationNo" value="no" checked />
+                                            <label class="accommodation_label" for="accommodationNo">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+                                <p class="text-success" id="msg-success"></p>
+                                <div class="col-12 d-flex flex-row justify-content-between">
+                                    <input class="btn btn-info col-3 mt-3" onclick="display('sectionHome')"
+                                        value="Back" />
+                                    <button type="submit" class="btn btn-primary w-100 mt-3 col-8"
+                                        id="submit-button"><span class="submit-text">Submit</span></button>
+                                </div>
+
                             </div>
-
-
                         </div>
-                        <div class=" form-group">
-                            <label for="event">
-                                <p class="labelName">Event Name</p>
-                            </label>
-                            <input type="text" class="form-control inputEle" name="Event" id="event" value="Poster">
-                        </div>
-                        <p class="text-success" id="msg-success"></p>
-                        <button type="submit" class="btn btn-primary w-100" id="submit-button"><span
-                                class="submit-text">Submit</span></button>
+
                     </form>
                     <div class="w-embed">
                         <img src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708403040/ezgif.com-webp-to-png-converter_iirg5v.svg"
