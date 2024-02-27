@@ -36,7 +36,13 @@
                 </a>
 
                 <div class="why-register col-xs-12 col-sm-12 col-md-7 col-lg-7">
-                    <h1 class="main-heading">Ripple 2k24</h1>
+                    <a class="form-back" href="../index.html">
+                        <span class="d-flex flex-row align-items-center"><img class="ripple-logo"
+                                src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708919298/WhatsApp_Image_2024-02-19_at_21.27.18_2fb18051_te5ahv.jpg"
+                                alt="LOGO">
+                            <h1 class="main-heading ml-3">Ripple 2k24</h1>
+                        </span>
+                    </a>
                     <div class="why-register-content mt-5">
                         <h2 class="second-heading">
                             Networking, opportunities, knowledge exchange, career advancement.
@@ -63,6 +69,15 @@
                                 alt="" height="30px">
                             New connections.
                         </li>
+                    </ul>
+
+                    <h1>Instructions</h1>
+                    <ul>
+                        <li style="font-size: 20px;">--- ----- --------- ---------</li>
+                        <li style="font-size: 20px;">----- ---- -------- --- -----</li>
+                        <li style="font-size: 20px;">-- ---- ------- --- ---- ----</li>
+                        <li style="font-size: 20px;">----- ----- -------- -- --- -</li>
+                        <li style="font-size: 20px;">- ------ ----- ---- - -------</li>
                     </ul>
                 </div>
 
@@ -94,7 +109,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="regno">
-                                    <p class="labelName">RegNo</p>
+                                    <p class="labelName">Reg.No.</p>
                                     <!-- In the reg no contains collage code so no need to take collage name -->
                                 </label>
                                 <input type="text" class="form-control inputEle" name="RegNo" id="regno"
@@ -132,14 +147,22 @@
                                     <label for="transaction">
                                         <p class="labelName">Transaction Id <a
                                                 style="text-decoration: none; color: #131314;"
-                                                href="transactionSteps.html"><svg xmlns="http://www.w3.org/2000/svg"
-                                                    width="16" height="16" fill="currentColor" class="bi bi-info-circle"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
-                                                    <path
-                                                        d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
-                                                </svg></a></p>
+                                                href="transactionSteps.html">
+                                                <span class="Tooltip" id="phonepay">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-info-circle"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                        <path
+                                                            d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+                                                    </svg>
+                                                    <span class="tooltiptext"
+                                                        style="background-color: #131314; color: #f1f1f1; width: 100px;">If
+                                                        you
+                                                        don't know click me</span>
+                                                </span>
+                                            </a></p>
                                     </label>
                                     <div class="Tooltip mr-3 d-flex flex-row justify-content-center align-items-center"
                                         id="phonepay">
@@ -165,7 +188,7 @@
                                 readonly>
                         </div>
                         <p class="text-success" id="msg-success"></p>
-                        <button type="submit" class="btn btn-primary w-100" id="submit-button"><span
+                        <button type="submit" class="btn btn-primary w-100 mt-3" id="submit-button"><span
                                 class="submit-text">Submit</span></button>
                     </form>
                     <div class="w-embed">

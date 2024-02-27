@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     e.preventDefault();
     const formData = new FormData(form);
     const apiUrl =
-      'https://script.google.com/macros/s/AKfycbw3ciEBYMiZDk-7ZOew_loHT23ftIJhVTZKvMioShgC97q-IjtJErBtunnuU1CeiOhL7Q/exec';
+      'https://script.google.com/macros/s/AKfycbwmkw4MRisKueud4Ljh61UKci_0Bh3vSN26_P-xvCVjTDKElqJF3Vo1SMuIqf-naNd-iA/exec';
 
     // Change button text to loading GIF with reduced height
     submitButton.innerHTML = `<img src="${loadingGifUrl}" alt="Loading..." style="height: 30px;" />`;

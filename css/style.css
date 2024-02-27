@@ -1243,16 +1243,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #schedule .schedule-item .speaker {
-  width: 60px;
-  height: 60px;
+  width: 120px;
+  height: 120px;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: 10%;
   float: left;
   margin: 0 10px 10px 0;
+  margin-right: 70px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 #schedule .schedule-item .speaker img {
-  height: 100%;
+  width: 120%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   margin-left: 50%;
@@ -1276,6 +1278,80 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-style: italic;
   color: #152b79;
   margin-bottom: 0;
+}
+
+/* Additional styles for the unordered list inside the schedule item */
+#schedule .schedule-item ul {
+  list-style-type: disc;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+#schedule .schedule-item li {
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+#schedule .schedule-item li:before {
+  content: '\2022'; /* Use a bullet point as a list item marker */
+  color: #19328e; /* Set the color of the bullet point */
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.paper {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  #schedule .nav-tabs a {
+    padding: 8px 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #schedule .nav-tabs a {
+    padding: 8px 30px;
+    margin: 7px;
+  }
+
+  #schedule .schedule-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+  }
+
+  #schedule .schedule-item .speaker {
+    width: 100%;
+    margin: 0 0 10px 0;
+    margin-top: 20px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+    margin-bottom: 20px;
+  }
+  #schedule .schedule-item .speaker img {
+    width: 50%;
+    border-radius: 10%;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  #schedule .schedule-item .col-md-9 ul {
+    margin-left: 15px;
+  }
+
+  #schedule .schedule-item .col-md-9 h4 {
+    font-size: 20px;
+  }
+  #schedule .schedule-item .col-md-9 ul li {
+    font-size: 17px;
+  }
+}
+ul {
+  list-style-type: none !important;
 }
 
 /*--------------------------------------------------------------

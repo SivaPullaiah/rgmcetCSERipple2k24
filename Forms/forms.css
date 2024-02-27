@@ -163,6 +163,18 @@ ul {
   color: green !important;
 }
 
+.ripple-logo {
+  border-radius: 50%;
+}
+
+.form-back {
+  text-decoration: none;
+  color: #131314;
+}
+.form-back:hover {
+  text-decoration: none;
+  color: #131314;
+}
 /* Extra Small devices (portrait phones) */
 @media (max-width: 575.98px) {
   /* CSS styles for extra small devices */
@@ -173,6 +185,10 @@ ul {
   .form_pic {
     height: 80px;
     width: 80px;
+  }
+
+  .ripple-logo {
+    height: 60px;
   }
 }
 
@@ -187,6 +203,9 @@ ul {
     height: 90px;
     width: 90px;
   }
+  .ripple-logo {
+    height: 60px;
+  }
 }
 
 /* Medium devices (tablets) */
@@ -199,6 +218,10 @@ ul {
   .form_pic {
     height: 100px;
     width: 100px;
+  }
+
+  .ripple-logo {
+    height: 60px;
   }
 }
 
@@ -213,6 +236,10 @@ ul {
     height: 110px;
     width: 110px;
   }
+
+  .ripple-logo {
+    height: 60px;
+  }
 }
 
 /* Extra Large devices (large desktops) */
@@ -224,7 +251,11 @@ ul {
   }
 
   .form_pic {
-    height: 120px;
-    width: 120px;
+    height: 140px;
+    width: 140px;
+  }
+
+  .ripple-logo {
+    height: 70px;
   }
 }
