@@ -1,3 +1,67 @@
+function checkFields() {
+  var name = document.getElementById('name').value.trim();
+  var regno = document.getElementById('regno').value.trim();
+  var clgName = document.getElementById('clgName').value.trim();
+  var branch = document.getElementById('Branch').value.trim();
+  var semister = document.getElementById('Semister').value.trim();
+  var email = document.getElementById('email').value.trim();
+  var phone = document.getElementById('phone').value.trim();
+
+  var isValid = true;
+
+  // Validation for Name
+  if (name === '') {
+    isValid = false;
+  }
+
+  // Validation for Reg.No.
+  if (regno === '') {
+    isValid = false;
+  }
+
+  // Validation for College Name
+  if (clgName === '') {
+    isValid = false;
+  }
+
+  // Validation for Branch
+  if (branch === '') {
+    isValid = false;
+  }
+
+  // Validation for Year & Semester
+  if (semister === '') {
+    isValid = false;
+  }
+
+  // Validation for Email
+  if (email === '' || !isValidEmail(email)) {
+    isValid = false;
+  }
+
+  // Validation for Phone
+  if (phone === '' || !isValidPhone(phone)) {
+    isValid = false;
+  }
+
+  // Enable/disable Next button based on validation
+  var nextButton = document.getElementById('nextButton');
+  nextButton.disabled = !isValid;
+}
+
+// Function to validate email format
+function isValidEmail(email) {
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  return emailRegex.test(email);
+}
+
+// Function to validate phone format
+function isValidPhone(phone) {
+  var phoneRegex = /^\d{10}$/;
+  return phoneRegex.test(phone);
+}
+
+// oldcode
 let sections = document.querySelectorAll('[id^="section"]');
 if (sections.length > 1) {
   let sectionOne = sections[0];
@@ -12,7 +76,7 @@ const display = (sectionId) => {
   makeRemainingScreensInvisible(sectionId);
   let section = document.getElementById(sectionId);
   $(section).css('display', 'block');
-  window.scrollTo(0, 0);
+  // window.scrollTo(0, 0);
 };
 
 const makeRemainingScreensInvisible = (sectionId) => {
@@ -36,6 +100,18 @@ const makeRemainingScreensInvisible = (sectionId) => {
 };
 
 document.addEventListener('DOMContentLoaded', function () {
+  // Function to check if all input fields are filled
+  function checkFields() {
+    var inputs = document.querySelectorAll('.inputEle');
+    var filled = true;
+    inputs.forEach(function (input) {
+      if (input.value.trim() === '') {
+        filled = false;
+      }
+    });
+    return filled;
+  }
+
   let imageUrl = 'test';
   const toolTip = (id) => {
     // Update the tooltip content
@@ -114,6 +190,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (data.success) {
           // Add a CSS class to change text color to green
           successMessage.classList.add('success-message');
+          submit_button.disabled = true;
           // Reset the form
           setTimeout(() => {
             successMessage.textContent = '';
@@ -135,7 +212,7 @@ document.addEventListener('DOMContentLoaded', function () {
       .finally(() => {
         // Revert button text back to "Submit"
         submitButton.textContent = 'Submit';
-        submit_button.disabled = true;
+        // submit_button.disabled = true;
         upload_image_status.innerHTML = '';
       });
   });

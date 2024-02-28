@@ -339,3 +339,14 @@ ul {
   flex-grow: 1;
   background-color: rgb(71, 85, 105);
 }
+
+body::-webkit-scrollbar {
+  width: 9px;
+}
+body::-webkit-scrollbar-track {
+  padding: 20px;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #829ab1;
+  border-radius: 14px;
+}
