@@ -13,10 +13,13 @@
 
 .about-section .section-title h2 {
 	margin-bottom: 20px;
+	font-size: 40px;
+	font-weight: 600;
 }
 
 .about-section .section-title p {
 	font-size: 16px;
+	text-align: justify;
 }
 
 .about-section .section-title p.f-para {
@@ -70,7 +73,9 @@
 }
 
 .story-section .section-title h2 {
-	margin-bottom: 0;
+	margin-bottom: 20px;
+	font-size: 40px;
+	font-weight: 600;
 }
 
 .story-left {
@@ -95,6 +100,7 @@
 
 .story-item .si-text {
 	overflow: hidden;
+	text-align: justify;
 }
 
 .story-item .si-text h4 {
@@ -109,13 +115,21 @@
 -----------------------*/
 
 .testimonial-section {
+	margin-top: 100px;
 	padding-bottom: 40px;
 	overflow: hidden;
 }
 
-.testimonial-section .section-title {
+.testimonial-section .convener-title h2 {
 	margin-bottom: 26px;
     text-align: center;
+	color: #171822;
+	font-size: 40px;
+	font-weight: 600;
+}
+.testimonial-section .convener-title h3{
+	text-align: center;
+	color: #f44949;
 }
 
 .testimonial-slider .col-lg-6 {
