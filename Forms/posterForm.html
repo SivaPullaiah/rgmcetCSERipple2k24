@@ -73,11 +73,12 @@
 
                     <h1>Instructions</h1>
                     <ul>
-                        <li style="font-size: 20px;">--- ----- --------- ---------</li>
-                        <li style="font-size: 20px;">----- ---- -------- --- -----</li>
-                        <li style="font-size: 20px;">-- ---- ------- --- ---- ----</li>
-                        <li style="font-size: 20px;">----- ----- -------- -- --- -</li>
-                        <li style="font-size: 20px;">- ------ ----- ---- - -------</li>
+                        <li style="font-size: 20px;">All posters must be original work, prepared by the applicant(s) and
+                            not previously presented at any other competition</li>
+                        <li style="font-size: 20px;">Student registrant(s) may only participate on one poster</li>
+                        <li style="font-size: 20px;">Judging Criteria (to receive maximum points)</li>
+                        <li style="font-size: 20px;">Coverage of Topic, Organization/ Logical Sequencing of Ideas</li>
+                        <li style="font-size: 20px;">Layout & Design, Mechanics, Presentation</li>
                     </ul>
                 </div>
 
@@ -107,61 +108,68 @@
                             <div class="form-row">
                                 <div class="form-group">
                                     <label for="name">
-                                        <p class="labelName">Name</p>
+                                        <p class="labelName">Full Name</p>
                                     </label>
-                                    <input type="text" class="form-control inputEle" name="Name" id="name"
-                                        placeholder="Enter Your Name" required>
+                                    <input type="text" class="form-control inputEle checkField" name="Name" id="name"
+                                        placeholder="Name As Per Certificates" required oninput="checkFields()">
                                 </div>
                                 <div class="form-group">
                                     <label for="regno">
                                         <p class="labelName">Reg.No.</p>
                                         <!-- In the reg no contains collage code so no need to take collage name -->
                                     </label>
-                                    <input type="text" class="form-control inputEle" name="RegNo" id="regno"
-                                        placeholder="Enter your Reg.No" required>
+                                    <input type="text" class="form-control inputEle checkField" name="RegNo" id="regno"
+                                        placeholder="Enter your Reg.No" oninput="checkFields()" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="clgName">
-                                        <p class="labelName">Collage Name</p>
+                                        <p class="labelName">College Name</p>
                                         <!-- In the reg no contains collage code so no need to take collage name -->
                                     </label>
-                                    <input type="text" class="form-control inputEle" name="ClgName" id="clgName"
-                                        placeholder="Enter your Collage Name" required>
+                                    <input type="text" class="form-control inputEle checkField" name="ClgName"
+                                        id="clgName" placeholder="Enter your College Name" oninput="checkFields()"
+                                        required>
                                 </div>
                                 <div class="form-group">
                                     <label for="Branch">
                                         <p class="labelName">Branch</p>
                                         <!-- In the reg no contains collage code so no need to take collage name -->
                                     </label>
-                                    <input type="text" class="form-control inputEle" name="Branch" id="Branch"
-                                        placeholder="Ex: Computer Science & Engineering." required>
+                                    <input type="text" class="form-control inputEle checkField" name="Branch"
+                                        id="Branch" placeholder="Ex: Computer Science & Engineering."
+                                        oninput="checkFields()" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="Semister">
                                         <p class="labelName">Year & Semister</p>
                                         <!-- In the reg no contains collage code so no need to take collage name -->
                                     </label>
-                                    <input type="text" class="form-control inputEle" name="Semister" id="Semister"
-                                        placeholder="Ex: II & II" required>
+                                    <input type="text" class="form-control inputEle checkField" name="Semister"
+                                        id="Semister" placeholder="Ex: II & II" oninput="checkFields()" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="email">
                                         <p class="labelName">Email</p>
                                     </label>
-                                    <input type="email" class="form-control inputEle" id="email" name="Email"
-                                        placeholder="Enter your email adress" required>
+                                    <input type="email" class="form-control inputEle checkField" id="email" name="Email"
+                                        placeholder="Enter your email adress" oninput="checkFields()" required>
                                 </div>
                                 <div class="form-group">
                                     <label for="phone">
                                         <p class="labelName">Phone</p>
                                     </label>
-                                    <input type="text" class="form-control inputEle" name="Phone" id="phone"
-                                        placeholder="Enter 10 Digit Mobile Number" required>
+                                    <input type="text" class="form-control inputEle checkField" name="Phone" id="phone"
+                                        placeholder="Enter 10 Digit Mobile Number" oninput="checkFields()" required>
                                 </div>
 
                                 <div class="col-12 d-flex flex-row justify-content-end">
+                                    <!-- <input class="btn btn-primary mt-3 col-12" onclick="display('sectionSecond')"
+                                        value="Next" /> -->
+
                                     <input class="btn btn-primary mt-3 col-12" onclick="display('sectionSecond')"
-                                        value="Next" />
+                                        value="Next" id="nextButton" disabled />
+
+
                                     <!-- <button type="submit" class="btn btn-primary w-100 mt-3 col-8"
                                         id="submit-button"><span class="submit-text">Submit</span></button> -->
                                 </div>
@@ -179,10 +187,10 @@
 
                                     <div class="d-flex flex-row justify-content-between align-items-center">
                                         <input type="text" class="form-control inputEle col-8" name="paynumber"
-                                            id="phone" value="PhonePay no: 9391993975" readonly>
+                                            id="phone" value="GooglePay no: 9652573951" readonly>
                                         <img class="col-4" class="phonepay_img"
                                             src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708784874/IMG_20240224_195650_anvuq1.png"
-                                            alt="Phone Pay Scanner" name="paynumber" id="Dispaly_phone_qr">
+                                            alt="Google Pay Scanner" name="paynumber" id="Dispaly_phone_qr">
                                     </div>
                                 </div>
                                 <div class="form-group">
