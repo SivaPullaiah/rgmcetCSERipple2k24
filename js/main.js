@@ -1,3 +1,7 @@
+window.addEventListener('load', function () {
+  var loadingOverlay = document.getElementById('loadingOverlay');
+  loadingOverlay.style.display = 'none';
+});
 jQuery(document).ready(function ($) {
   // Back to top button
   $(window).scroll(function () {
