@@ -1,0 +1,106 @@
+/* Default styles for larger screens */
+h2{
+    text-align: center;
+}
+.below-header{
+    margin-top:50px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+    display:flex;
+    justify-content: center;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  /* Medium-sized screens (768px to 991px) */
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    table {
+      font-size: 12px;
+      /* Add other styles specific to this size range */
+    }
+
+    .secretary,.coordinators{
+        display:flex;
+        justify-content: center;
+    }
+  }
+  
+  /* Small-sized screens (576px to 767px) */
+  @media only screen and (min-width: 576px) and (max-width: 767px) {
+    table {
+      /* Set a maximum width for horizontal scrolling */
+      font-size: 12px;
+      /* Add other styles specific to this size range */
+    }
+  }
+  
+  /* Extra small screens (up to 575px) */
+  @media (max-width: 575px) {
+    table {
+      font-size: 10px;
+      /* Add other styles specific to this size range */
+      display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+    
+    .secretary,.coordinators{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+  }
+
+.only-table{
+    overflow-x: auto;
+    margin:10px;
+}
+
+.person{
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    margin:10px;
+    padding:15px;
+    margin-right:50px;
+    cursor:pointer;
+}
+
+.person:hover{
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.8);
+}
+p{
+    margin:0;
+    padding:0;
+}
+
+.secretary,.coordinators{
+    display:flex;
+    justify-content: center;
+}
+
+.table-contents{
+    margin-top:30px;
+}
+
+.secretary{
+    margin-bottom: 30px;
+}

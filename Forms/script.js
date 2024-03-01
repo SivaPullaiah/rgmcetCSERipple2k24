@@ -35,12 +35,12 @@ function checkFields() {
   }
 
   // Validation for Email
-  if (email === '' || !isValidEmail(email)) {
+  if (email === '') {
     isValid = false;
   }
 
   // Validation for Phone
-  if (phone === '' || !isValidPhone(phone)) {
+  if (phone === '') {
     isValid = false;
   }
 
@@ -57,7 +57,8 @@ function isValidEmail(email) {
 
 // Function to validate phone format
 function isValidPhone(phone) {
-  var phoneRegex = /^\d{10}$/;
+  // Regular expression to match Indian phone numbers with or without country code
+  var phoneRegex = /^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$/;
   return phoneRegex.test(phone);
 }
 
