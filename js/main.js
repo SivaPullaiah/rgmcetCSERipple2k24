@@ -1,9 +1,19 @@
-window.addEventListener('load', function () {
-  var loadingOverlay = document.getElementById('loadingOverlay');
-  loadingOverlay.style.display = 'none';
-});
 jQuery(document).ready(function ($) {
   // Back to top button
+  /*------------------
+        Preloader
+    --------------------*/
+  $(window).on('load', function () {
+    setTimeout(function () {
+      fadeout();
+    }, 500);
+  });
+
+  function fadeout() {
+    $('.preloader').css('opacity', '0');
+    $('.preloader').css('display', 'none');
+  }
+
   $(window).scroll(function () {
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
