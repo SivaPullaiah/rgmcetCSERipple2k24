@@ -1412,9 +1412,9 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-bottom: 20px;
   }
   #schedule .schedule-item .speaker img {
-    width: 50%;
-    border-radius: 10%;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+    width: 40%;
+    border-top-right-radius: 20px;
+    /* box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4); */
   }
 
   #schedule .schedule-item .col-md-9 ul {
