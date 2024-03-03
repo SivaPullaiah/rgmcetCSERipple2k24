@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', function () {
   };
 
   let url =
-    'https://script.google.com/macros/s/AKfycbx14ZG0zJTDjvk5cLQZFtq--TqJMu0N3_BIqQRJLyGVvLl2X0goizTksrtZezrj-cry/exec';
+    'https://script.google.com/macros/s/AKfycbyvx5RlO-1trf-pLBHZ_HFL_iEgUfV5nzAKLBFxgv8ASbFZP228JKbY8XxCzeMWrfGAoQ/exec';
   let file = document.querySelector('#image');
   let img = document.querySelector('img');
   let submit_button = document.getElementById('submit-button');
@@ -168,7 +168,7 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log(pair[0] + ', ' + pair[1]); // You will see the data here
     }
     const apiUrl =
-      'https://script.google.com/macros/s/AKfycbxvkowJlFfbWKWp9Hj3d6EcDQ47ey5MlxcRXO2PifCOi3JYJVApWDr-drdvFOkdJ58obg/exec';
+      'https://script.google.com/macros/s/AKfycbxpqOcKwtHoRUpq9UGaJrFHgDjduDOHt64mjht94ZXE0_lr2cbnt7tD5sd0zoN20s_vGg/exec';
 
     // Change button text to loading GIF with reduced height
     submitButton.innerHTML = `<img src="${loadingGifUrl}" alt="Loading..." style="height: 30px;" />`;
