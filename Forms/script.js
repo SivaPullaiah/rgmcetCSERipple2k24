@@ -50,8 +50,11 @@ function checkFields() {
 }
 
 // Function to validate email format
+// RFC 5322 official standard regular expression to validate email addresses
+// https://datatracker.ietf.org/doc/html/rfc5322#section-3.4
 function isValidEmail(email) {
-  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var emailRegex =
+    /^(?:(?:[^<>()\[\]\\.,;:\s@\"]+(\.[^<>()\[\]\\.,;:\s@\"]+)*)|(?:\".+\"))@(?:(?:[^<>()[\]\\.,;:\s@\"]+\.)+[^<>()[\]\\.,;:\s@\"]{2,})$/;
   return emailRegex.test(email);
 }
 

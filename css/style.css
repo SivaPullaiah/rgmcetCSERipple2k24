@@ -82,6 +82,10 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.event-name-heading {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .redirectToForm {
   text-decoration: none;
 }

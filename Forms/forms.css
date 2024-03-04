@@ -108,7 +108,6 @@ body {
 }
 
 .Gradiant-bg {
-  font-size: 42px;
   color: transparent;
   background: linear-gradient(
     74deg,
@@ -178,6 +177,9 @@ ul {
 /* Extra Small devices (portrait phones) */
 @media (max-width: 575.98px) {
   /* CSS styles for extra small devices */
+  .winner-img {
+    height: 100px;
+  }
   .phonepay_img {
     height: 80px;
     width: 80px;
@@ -195,6 +197,9 @@ ul {
 /* Small devices (landscape phones) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   /* CSS styles for small devices */
+  .winner-img {
+    height: 120px;
+  }
   .phonepay_img {
     height: 85px;
     width: 85px;
@@ -211,6 +216,9 @@ ul {
 /* Medium devices (tablets) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   /* CSS styles for medium devices */
+  .winner-img {
+    height: 140px;
+  }
   .phonepay_img {
     height: 95px;
     width: 95px;
@@ -228,6 +236,9 @@ ul {
 /* Large devices (desktops) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   /* CSS styles for large devices */
+  .winner-img {
+    height: 160px;
+  }
   .phonepay_img {
     height: 120px;
     width: 120px;
@@ -245,6 +256,9 @@ ul {
 /* Extra Large devices (large desktops) */
 @media (min-width: 1200px) {
   /* CSS styles for extra large devices */
+  .winner-img {
+    height: 200px;
+  }
   .phonepay_img {
     height: 140px;
     width: 140px;
@@ -340,13 +354,20 @@ ul {
   background-color: rgb(71, 85, 105);
 }
 
-body::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 9px;
 }
-body::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
   padding: 20px;
 }
-body::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
   background-color: #829ab1;
   border-radius: 14px;
+}
+
+.paper_intructions {
+  list-style-type: disc !important;
+  margin-right: 30px;
+  height: 300px;
+  overflow: auto;
 }
