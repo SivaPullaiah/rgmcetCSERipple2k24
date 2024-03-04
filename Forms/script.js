@@ -35,12 +35,12 @@ function checkFields() {
   }
 
   // Validation for Email
-  if (email === '') {
+  if (email === '' || !isValidEmail(email)) {
     isValid = false;
   }
 
   // Validation for Phone
-  if (phone === '') {
+  if (phone === '' || !isValidPhone(phone)) {
     isValid = false;
   }
 
