@@ -58,7 +58,7 @@ function isValidEmail(email) {
 // Function to validate phone format
 function isValidPhone(phone) {
   // Regular expression to match Indian phone numbers with or without country code
-  var phoneRegex = /^(\+91[\-\s]?)?[0]?(91)?[789]\d{9}$/;
+  var phoneRegex = /^(\+91[\-\s]?)?[0]?(91)?[6789]\d{9}$/;
   return phoneRegex.test(phone);
 }
 
