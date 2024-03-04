@@ -148,13 +148,13 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 9999; /* Note: You had two z-index declarations; I removed the duplicate */
   position: fixed;
-  bottom: 20px;
-  left: 40px;
-  z-index: 9999;
+  top: 20px; /* Updated to top */
+  left: 40px; /* Updated to left */
   cursor: pointer;
 }
+
 #msg-success.error-message {
   color: red !important;
 }

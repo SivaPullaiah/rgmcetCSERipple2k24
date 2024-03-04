@@ -1,3 +1,16 @@
+// script.js
+
+document.addEventListener('DOMContentLoaded', function () {
+  // Add event listener to the element with id 'sticky-link'
+  var stickyLink = document.getElementById('sticky-link');
+  if (stickyLink) {
+    stickyLink.addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent the default link behavior
+      window.history.back(); // Simulate browser back button functionality
+    });
+  }
+});
+
 function checkFields() {
   var name = document.getElementById('name').value.trim();
   var regno = document.getElementById('regno').value.trim();
