@@ -171,7 +171,11 @@ ul {
 }
 
 #registration_successful {
-  z-index: 9999;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
 }
 
 .ripple-logo {

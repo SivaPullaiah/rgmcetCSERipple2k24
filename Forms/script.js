@@ -209,6 +209,10 @@ document.addEventListener('DOMContentLoaded', function () {
           successMessage.classList.add('success-message');
           submit_button.disabled = true;
           // Reset the form
+          var registration_successfulEl = document.getElementById(
+            'registration_successful'
+          );
+          registration_successfulEl.classList.remove('d-none');
           setTimeout(() => {
             successMessage.textContent = '';
             // Reset the class to remove the green color
@@ -218,6 +222,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var nextButton = document.getElementById('nextButton');
             nextButton.disabled = true;
             display('sectionFirst');
+            registration_successfulEl.classList.add('d-none');
           }, 5000);
         } else {
           // Add a CSS class to change text color to red
