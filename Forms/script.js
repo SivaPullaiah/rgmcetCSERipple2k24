@@ -215,6 +215,9 @@ document.addEventListener('DOMContentLoaded', function () {
             successMessage.classList.remove('success-message');
             successMessage.classList.remove('error-message');
             form.reset();
+            var nextButton = document.getElementById('nextButton');
+            nextButton.disabled = true;
+            display('sectionFirst');
           }, 5000);
         } else {
           // Add a CSS class to change text color to red
