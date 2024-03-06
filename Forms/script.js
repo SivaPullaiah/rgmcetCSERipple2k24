@@ -213,6 +213,7 @@ document.addEventListener('DOMContentLoaded', function () {
             successMessage.textContent = '';
             // Reset the class to remove the green color
             successMessage.classList.remove('success-message');
+            successMessage.classList.remove('error-message');
             form.reset();
           }, 5000);
         } else {
