@@ -192,7 +192,7 @@ jQuery(document).ready(function ($) {
   // For demo preview end
 
   // Use this for real timer date
-  var timerdate = '2024/04/01';
+  var timerdate = '2024/04/02';
 
   $('#countdown').countdown(timerdate, function (event) {
     $(this).html(
