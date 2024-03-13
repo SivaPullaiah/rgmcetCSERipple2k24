@@ -381,9 +381,18 @@ ul {
   border-radius: 14px;
 }
 
-.paper_intructions {
-  list-style-type: disc !important;
+.Instruction {
+  /* list-style-type: num; */
   margin-right: 30px;
   height: 300px;
   overflow: auto;
+}
+.Instruction::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px; /* Adjust this height as needed */
+  background: linear-gradient(transparent, rgba(255, 255, 255, 0.7));
 }
