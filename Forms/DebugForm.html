@@ -99,6 +99,15 @@
                         </div>
                     </div>
 
+                    <p class="font-weight-bold"><span class="badge badge-pill badge-success">Note:</span>&nbsp;
+                        Exclusive
+                        registration event for
+                        1st and
+                        2nd years only - not applicable for third and final year students.</p>
+                    <p><span class="badge badge-pill badge-info">Info: </span>&nbsp;
+                        Get free RGMCET bus transportation, addressing the distance for students from Kurnool,
+                        Banaganapalli, Koilkuntla, and Allagadda. Register now for effortless campus access! - To avail,
+                        please contact +91 9492305593 / 9441574900.</p>
                     <h1>Instructions</h1>
                     <ul>
                         <li style="font-size: 20px;">Find out the error and fix it.</li>
@@ -167,14 +176,30 @@
                                         id="Branch" placeholder="Ex: Computer Science & Engineering."
                                         oninput="checkFields()" required>
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="Semister">
                                         <p class="labelName">Year & Semester</p>
-                                        <!-- In the reg no contains collage code so no need to take collage name -->
                                     </label>
                                     <input type="text" class="form-control inputEle checkField" name="Semister"
                                         id="Semister" placeholder="Ex: II & II" oninput="checkFields()" required>
+                                </div> -->
+                                <div class="form-group">
+                                    <label for="Semister">
+                                        <p class="labelName">Year & Semester <br><span class="text-info">Event
+                                                exclusively
+                                                for 1st and 2nd year students. </span></p>
+                                        <!-- In the reg no contains collage code so no need to take collage name -->
+                                    </label>
+                                    <select class="form-control inputEle checkField" name="Semister" id="Semister"
+                                        onchange="checkFields()" required>
+                                        <option value="">Select Year & Semester</option>
+                                        <option value="I & I">1st Year, 1st Semester</option>
+                                        <option value="I & II">1st Year, 2nd Semester</option>
+                                        <option value="II & I">2nd Year, 1st Semester</option>
+                                        <option value="II & II">2nd Year, 2nd Semester</option>
+                                    </select>
                                 </div>
+
                                 <div class="form-group">
                                     <label for="email">
                                         <p class="labelName">Email</p>
