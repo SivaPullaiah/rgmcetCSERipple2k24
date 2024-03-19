@@ -374,6 +374,7 @@ ul {
   width: 9px;
 }
 ::-webkit-scrollbar-track {
+  margin-top: 4px;
   padding: 20px;
 }
 ::-webkit-scrollbar-thumb {
@@ -383,6 +384,8 @@ ul {
 
 .Instruction {
   /* list-style-type: num; */
+  position: relative;
+  z-index: 10000;
   margin-right: 30px;
   height: 300px;
   overflow: auto;
