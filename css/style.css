@@ -1156,9 +1156,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 60px 0 30px 0;
 }
 
-#speakers .container1 {
-  margin: 0 100px;
-}
 #speakers .speaker {
   position: relative;
   overflow: hidden;
@@ -2337,6 +2334,9 @@ ul {
   #subscribe input {
     min-width: 400px;
   }
+  #speakers .container1 {
+    margin: 0px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -2359,6 +2359,9 @@ ul {
 }
 
 @media (min-width: 1024px) {
+  #speakers .container1 {
+    margin: 0 100px;
+  }
   #intro {
     background-attachment: fixed;
   }
@@ -2380,9 +2383,15 @@ ul {
   .nav-menu a {
     padding: 8px 4px;
   }
+  #speakers .container1 {
+    margin: 0 60px;
+  }
 }
 
 @media (max-width: 991px) {
+  #speakers .container1 {
+    margin: 0 50px;
+  }
   #header {
     background: rgba(6, 12, 34, 0.98);
     height: 70px;
@@ -2416,6 +2425,9 @@ ul {
 }
 
 @media (max-width: 768px) {
+  #speakers .container1 {
+    margin: 0 30px;
+  }
   .back-to-top {
     bottom: 15px;
   }
@@ -2430,6 +2442,9 @@ ul {
 }
 
 @media (max-width: 767px) {
+  #speakers .container1 {
+    margin: 0 20px;
+  }
   #schedule .nav-tabs a {
     padding: 8px 50px;
   }
@@ -2499,4 +2514,9 @@ ul {
   margin: 0;
   font-size: 24px; /* Adjust size as needed */
   color: gold; /* Color of the star */
+}
+
+
+.w-4 {
+  width: 1rem;
 }
