@@ -2541,5 +2541,5 @@ ul {
 
 .closed-regi {
   width: 100vw;
-  text-align: center;
+  position: relative;
 }
