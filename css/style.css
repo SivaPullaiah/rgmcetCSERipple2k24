@@ -2538,3 +2538,8 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.closed-regi {
+  width: 100vw;
+  text-align: center;
+}
