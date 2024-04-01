@@ -2549,3 +2549,13 @@ ul {
   font-size: 42px;
   font-weight: bold;
 }
+
+.blink {
+  animation: blinker 1.5s linear infinite;
+  color: #f82249;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
