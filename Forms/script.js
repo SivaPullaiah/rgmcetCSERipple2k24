@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
       console.log(pair[0] + ', ' + pair[1]); // You will see the data here
     }
     const apiUrl =
-      'https://script.google.com/macros/s/AKfycbz80zsAH6Z35ktY5eWLsST1aJycwX4G2gGlu8WuPRHuvMdeLXbDzDJcJKm8Inm0djW-Pw/exec';
+      'https://script.google.com/macros/s/AKfycbz0ORKbCtRT73RRB63wmDAGGnUhvsHhc55MUsSufrFRuhXDwXHddB-jvPi_2QwqTtrL/exec';
 
     // Change button text to loading GIF with reduced height
     submitButton.innerHTML = `<img src="${loadingGifUrl}" alt="Loading..." style="height: 30px;" />`;

@@ -399,3 +399,9 @@ ul {
   height: 30px; /* Adjust this height as needed */
   background: linear-gradient(transparent, rgba(255, 255, 255, 0.7));
 }
+
+.marquee-regi-closed {
+  color: #000;
+  font-size: 42px;
+  font-weight: bold;
+}

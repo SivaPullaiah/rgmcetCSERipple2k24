@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Workshop Section</title>
+    <title>Bug Fixing Section</title>
     <link rel="stylesheet" href="forms.css">
 
     <!-- bootstrap cdn 4.5.2-->
@@ -99,18 +99,21 @@
                         </div>
                     </div>
 
-                    <!-- <p class="form"><span class="badge badge-pill badge-info">Info </span>&nbsp;
+                    <p class="font-weight-bold form"><span class="badge badge-pill badge-success">Note</span>&nbsp;
+                        Exclusive
+                        registration event for
+                        1st and
+                        2nd years only - not applicable for third and final year students.</p>
+                    <p class="form"><span class="badge badge-pill badge-info">Info </span>&nbsp;
                         Get free RGMCET bus transportation, addressing the distance for students from Kurnool,
                         Banaganapalli, Koilkuntla, and Allagadda. Register now for effortless campus access! - To avail,
-                        please contact +91 9492305593 / 9441574900.</p> -->
-
+                        please contact +91 9492305593 / 9441574900.</p>
                     <h1>Instructions</h1>
                     <ul class="form" style="position: relative; z-index: 10000;">
-                        <li style="font-size: 20px;">Stay Focussed</li>
-                        <li style="font-size: 20px;">Listen And Understand</li>
-                        <li style="font-size: 20px;">Keep Calm</li>
-                        <li style="font-size: 20px;">At the end of the workshop there will be a quiz</li>
-                        <li style="font-size: 20px;">The winners of the quiz are given prizes</li>
+                        <li style="font-size: 20px;">Find out the error and fix it.</li>
+                        <li style="font-size: 20px;">Faster submission gets more points.</li>
+                        <li style="font-size: 20px;">Judging Criteria (to receive maximum points)</li>
+                        <li style="font-size: 20px;">Simple Programming</li>
                         <li style="font-size: 20px;"><b>Payment related queires contact +91 9391993975/ 8790061990</b>
                         </li>
                     </ul>
@@ -124,7 +127,7 @@
                             <div class="col-6 second_section"></div>
                         </div>
                         <div class="form-row d-flex flex-row justify-content-between align-items-center">
-                            <h1 class="form_heading">WorkShop
+                            <h1 class="form_heading">Bug Fixing
                                 <br>
                                 Registrations
                                 <div class="sc-kcbnda fMROTN"><svg width="200" height="7" viewBox="0 0 63 5" fill="none"
@@ -135,8 +138,8 @@
                                     </svg></div>
                             </h1>
                             <img class="form_pic"
-                                src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708842477/3411109_i9vmzb.jpg"
-                                alt="workshop">
+                                src="https://res.cloudinary.com/sivapullaiah/image/upload/v1708842525/Wavy_Bus-15_Single-03_bawgkh.jpg"
+                                alt="Debug">
                         </div>
                         <div id="sectionFirst">
                             <div class="form-row">
@@ -173,14 +176,30 @@
                                         id="Branch" placeholder="Ex: Computer Science & Engineering."
                                         oninput="checkFields()" required>
                                 </div>
-                                <div class="form-group">
+                                <!-- <div class="form-group">
                                     <label for="Semister">
-                                        <p class="labelName">Year & Semester &nbsp;<span class="badge badge-pill badge-warning">Ex: II & II</span></p>
-                                        <!-- In the reg no contains collage code so no need to take collage name -->
+                                        <p class="labelName">Year & Semester</p>
                                     </label>
                                     <input type="text" class="form-control inputEle checkField" name="Semister"
                                         id="Semister" placeholder="Ex: II & II" oninput="checkFields()" required>
+                                </div> -->
+                                <div class="form-group">
+                                    <label for="Semister">
+                                        <p class="labelName">Year & Semester <br><span class="text-info">Event
+                                                exclusively
+                                                for 1st and 2nd year students. </span></p>
+                                        <!-- In the reg no contains collage code so no need to take collage name -->
+                                    </label>
+                                    <select class="form-control inputEle checkField" name="Semister" id="Semister"
+                                        onchange="checkFields()" required>
+                                        <option value="">Select Year & Semester</option>
+                                        <option value="I & I">1st Year, 1st Semester</option>
+                                        <option value="I & II">1st Year, 2nd Semester</option>
+                                        <option value="II & I">2nd Year, 1st Semester</option>
+                                        <option value="II & II">2nd Year, 2nd Semester</option>
+                                    </select>
                                 </div>
+
                                 <div class="form-group">
                                     <label for="email">
                                         <p class="labelName">Email</p>
@@ -223,9 +242,9 @@
 
                                     <div class="d-flex flex-row justify-content-between align-items-center">
                                         <input type="text" class="form-control inputEle col-8" name="paynumber"
-                                            id="phone" value="GPay no: 9959558***" readonly>
+                                            id="phone" value="GPay no: 7981350***" readonly>
                                         <!-- <img class="col-4" class="phonepay_img"
-                                            src="https://res.cloudinary.com/sivapullaiah/image/upload/v1709106844/WhatsApp_Image_2024-02-28_at_12.49.54_203dc43d_gulznx.jpg"
+                                            src="https://res.cloudinary.com/sivapullaiah/image/upload/v1709106558/WhatsApp_Image_2024-02-28_at_12.50.49_580e4a22_aovrww.jpg"
                                             alt="Google Pay Scanner" name="paynumber" id="Dispaly_phone_qr"> -->
                                         <div class="col-4 Tooltip d-flex flex-row justify-content-center align-items-center"
                                             id="phonepay">
@@ -237,6 +256,7 @@
                                                     alt="Google Pay Scanner" style="width: 180px; height: 210px;">
                                             </span>
                                         </div>
+
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -267,9 +287,9 @@
                                                 alt="Phone Pay Scanner" width="25" height="25">
                                             <span class="tooltiptext">
                                                 <img src="https://res.cloudinary.com/sivapullaiah/image/upload/v1711953010/61336_os2lxy.jpg"
-                                                    alt="Google Pay Scanner" style="width: 150px; height: 150px;">
+                                                    alt="Phone Pay Scanner" style="width: 180px; height: 210px;">
                                             </span>
-                                            <span> &nbsp; ₹100</span>
+                                            <span> &nbsp; ₹150</span>
                                         </div>
                                     </div>
                                     <input type="text" class="form-control inputEle" name="TransactionId"
@@ -280,7 +300,7 @@
                                         <p class="labelName">Event Name</p>
                                     </label>
                                     <input type="text" class="form-control inputEle" name="Event" id="event"
-                                        value="WORKSHOP" readonly>
+                                        value="Bug Fix" readonly>
                                 </div>
                                 <div class="form-group">
                                     <label for="image">
@@ -300,7 +320,7 @@
                                     </label>
                                 </div>
 
-                                <div class="form-group d-none">
+                                <div class="form-group">
                                     <label for="accommodationNeeded">
                                         <p class="labelName">Do you require accommodation?</p>
                                         <span><span class="badge badge-pill badge-info">Note</span> &nbsp; Only for Out
